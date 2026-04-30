@@ -1,0 +1,37 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000; /* Outer void color */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  
+  /* Center the fixed-size app in the viewport */
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  overflow: auto; /* Scrollbars if window < 1960x1080 */
+}
+
+#root {
+  /* Hardcoded resolution */
+  width: 1960px;
+  height: 1080px;
+  
+  /* App visual style */
+  background-color: #222; /* Matches header background */
+  position: relative;
+  box-shadow: 0 0 100px rgba(0,0,0,0.8); /* Separation from outer void */
+  border: 1px solid #333;
+}
